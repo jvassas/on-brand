@@ -9,7 +9,7 @@ export default class MyApp extends React.Component {
 
       //Add payment confirmed page?
       this.props.clearCart();
-      this.props.history.push('/');
+      this.props.history.push('/shop');
       // You can bind the "payment" object's value to your state or props or whatever here, please see below for sample returned data
     };
 
