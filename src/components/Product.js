@@ -102,7 +102,7 @@ const ProductWrapper = styled.article`
     position: absolute;
     bottom: 0;
     right: 0;
-    padding: 0.2rem 0.4rem;
+    padding: 0.5rem;
     background: var(--lightBlue);
     border: none;
     color: var(--mainWhite);
@@ -115,7 +115,7 @@ const ProductWrapper = styled.article`
     transform: translate(0, 0);
   }
   .cart-btn:hover {
-    color: var(--mainBlue);
+    color: var(--mainYellow);
     cursor: pointer;
   }
 `;

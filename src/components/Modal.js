@@ -22,17 +22,17 @@ export default class Modal extends Component {
                       id="modal"
                       className="col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize p-5"
                     >
-                      <h5>Item added to cart</h5>
+                      <h5 className="msg">Item added to cart</h5>
                       <img src={img} className="img-fluid" alt="product" />
-                      <h5>{title}</h5>
+                      <h5 className="msg">{title}</h5>
                       <h5 className="text-muted">price : $ {price}</h5>
                       <Link to="/shop">
-                        <button onClick={() => closeModal()}>
+                        <ButtonContainer onClick={() => closeModal()}>
                           Continue Shopping
-                        </button>
+                        </ButtonContainer>
                       </Link>
                       <Link to="/cart">
-                        <button onClick={() => closeModal()}>Go to Cart</button>
+                        <ButtonContainer onClick={() => closeModal()}>Go to Cart</ButtonContainer>
                       </Link>
                     </div>
                   </div>
@@ -55,8 +55,28 @@ const ModalContainer = styled.div`
   background: rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
+  border-radius: 0.5rem;
   justify-content: center;
   #modal {
     background: var(--mainWhite);
+  }
+`;
+
+const ButtonContainer = styled.button`
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  background: white;
+  border: 0.1rem solid var(--lightBlue);
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 0.2rem 0.5rem;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    background: var(--lightBlue);
+    color: var(--mainYellow);
+  }
+  &:focus {
+    outline: none;
   }
 `;

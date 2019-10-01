@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { Tween, Timeline } from "react-gsap";
 import styled from "styled-components";
 import GOB from "../../src/geton.png";
 
@@ -15,11 +16,14 @@ export default class Landing extends Component {
         </div>
 
         <div className="card-body text-center mb-3">
-          <h3 class="card-title h3 my-4">
-           <strong>COMFY CASUAL X STREETWEAR</strong>
-          </h3>
+          <Tween from={{ x: "200px" }}>
+            <h3 class="card-title h3 my-4">
+              <strong>COMFY CASUAL X STREETWEAR</strong>
+            </h3>
+          </Tween>
           <p class="card-text py-2">
-            Get On Brand represents comfortable and stylish for any occasion. Be yourself, feel yourself, On Brand.
+            Get On Brand represents comfortable and stylish for any occasion. Be
+            yourself, feel yourself, On Brand.
           </p>
           <Link to="/shop" className="ml-auto" id="jumbo-btn">
             <ButtonContainer>SHOP NOW</ButtonContainer>
@@ -42,19 +46,9 @@ const ButtonContainer = styled.button`
   transition: all 0.5s ease-in-out;
   &:hover {
     background: var(--lightBlue);
-    color: var(--mainBlue);
+    color: var(--mainYellow);
   }
   &:focus {
     outline: none;
   }
 `;
-
-//   <div className="jumbotron jumbotron-fluid">
-//     <div class="container">
-//       <div className="jumbo-btn">
-//         <Link to="/shop" className="ml-auto" id="jumbo-btn">
-//           <ButtonContainer>SHOP NOW</ButtonContainer>
-//         </Link>
-//       </div>
-//     </div>
-//   </div>

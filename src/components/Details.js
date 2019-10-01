@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { ProductConsumer } from "../context";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
 
 export default class Details extends Component {
   render() {
@@ -21,7 +22,7 @@ export default class Details extends Component {
             {/* title */}
               <div className="row">
                 <div className="col-10 mx-auto text-center text-slanted text-blue my-5">
-                  <h1>{title}</h1>
+                  <h1 className="title">{title}</h1>
                 </div>
               </div>
               <div className="row">
@@ -29,7 +30,7 @@ export default class Details extends Component {
                   <img src={img} className="img-fluid" alt="product" />
                 </div>
                 {/* product model, price, info */}
-                <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
+                <div className="col-10 mx-auto col-md-6 my-3 text-capitalize" id="product-info">
                   <h3>model: {title}</h3>
                   <h4 className="text-title text-uppercase text-muted mt-3 mb-2">
                     made by : <span className="text-uppercase">{company}</span>
@@ -46,10 +47,7 @@ export default class Details extends Component {
                   <p className="text-muted lead">{info}</p>
                   {/* buttons */}
                   <div>
-                      <Link to ='/shop'>
-                      <button>back to products</button>
-                      </Link>
-                      <button
+                      <ButtonContainer
                       disabled={inCart ? true : false}
                       onClick={() => {
                           value.addToCart(id);
@@ -57,7 +55,10 @@ export default class Details extends Component {
                       }}
                       >
                           {inCart ? "inCart" : "add to cart"}
-                      </button>
+                      </ButtonContainer>
+                      <Link to ='/shop'>
+                      <ButtonContainer>back to products</ButtonContainer>
+                      </Link>
                   </div>
                 </div>
               </div>
@@ -68,3 +69,23 @@ export default class Details extends Component {
     );
   }
 }
+
+
+const ButtonContainer = styled.button`
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  background: white;
+  border: 0.2rem solid var(--lightBlue);
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 0.2rem 0.5rem;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    background: var(--lightBlue);
+    color: var(--mainYellow);
+  }
+  &:focus {
+    outline: none;
+  }
+`;

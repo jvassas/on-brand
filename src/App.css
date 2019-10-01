@@ -5,8 +5,12 @@
   --mainBlack:black;
   --lightBlue:black;
   --mainWhite:#f3f3f3;
+  --mainYellow: #FFFF00;
   --mainDark:#232528;
   --mainYellow:#ffa400;
+}
+.row {
+  color: white;
 }
 .jumbotron {
   background-size: cover;
@@ -49,7 +53,7 @@ body {
 
 .btn-black:hover {
   background: var(--mainDark) !important;
-  color: var(--mainWhite) !important;
+  color: var(--mainYellow) !important;
 }
 
 .cart-icon{
@@ -60,6 +64,39 @@ body {
 
 #abt-title {
   padding: 2%;
+  color: white;
+}
+
+.abt {
+  color: white;
+}
+
+.title {
+  text-align: center;
+  color: white;
+}
+
+.cart-btn {
+  color: var(--mainYellow);
+}
+
+#product-info {
+  color:white;
+}
+
+.msg {
+  color: black;
+}
+
+#count {
+  color: var(--mainYellow);
+}
+
+.cart-title {
+  margin-top: 35px;
+  margin-bottom: 70px;
+  color: white;
+  text-align: center;
 }
 
 

@@ -11,6 +11,7 @@ import Default from './components/Default';
 import Modal from './components/Modal';
 import About from './components/About';
 import Blog from './components/Blog';
+
 class App  extends Component {
   render() {
     return (

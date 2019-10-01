@@ -17,22 +17,22 @@ export default class Navbar extends Component {
         </Link>
         <ul className="navbar-nav align-items-center">
             <li className="nav-item ml-5">
-            <Link to="/" className="nav-link">
+            <Link to="/" className="nav-link" id="page-link">
                 HOME
             </Link>
             </li>
             <li className="nav-item ml-5">
-            <Link to="/shop" className="nav-link">
+            <Link to="/shop" className="nav-link" id="page-link">
                 SHOP
             </Link>
             </li>
             <li className="nav-item ml-5">
-            <Link to="/about" className="nav-link">
+            <Link to="/about" className="nav-link" id="page-link">
                 ABOUT
             </Link>
             </li>
             <li className="nav-item ml-5">
-            <Link to="/blog" className="nav-link">
+            <Link to="/blog" className="nav-link" id="page-link">
                 BLOG
             </Link>
             </li>
@@ -62,7 +62,7 @@ const ButtonContainer = styled.button`
     transition:all 0.5s ease-in-out;
     &:hover { 
         background:var(--lightBlue);
-        color:var(--mainBlue);
+        color:var(--mainYellow);
     }
     &:focus {
         outline:none;
