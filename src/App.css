@@ -92,7 +92,7 @@ body {
 }
 
 .card {
-  width: 20rem;
+  width: 15rem;
 }
 
 #product-info {
@@ -131,6 +131,10 @@ body {
     width: 100%;
     height: 100vh;
     background-size: cover;
+  }
+
+  .card {
+    width: 25rem;
   }
   
 }

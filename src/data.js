@@ -4,7 +4,7 @@ export const storeProducts = [
     id: 1,
     title: "My Type of Jogger",
     colors: "Black & Grey",
-    img: "img/product-1.png",
+    img: "img/soon.png",
     price: 60,
     company: "Men's Joggers",
     info:
@@ -17,7 +17,7 @@ export const storeProducts = [
     id: 2,
     title: "$weats in the City",
     colors: "Black & Grey",
-    img: "img/product-2.png",
+    img: "img/soon.png",
     price: 60,
     company: "Women's Sweats",
     info:
@@ -30,7 +30,7 @@ export const storeProducts = [
     id: 3,
     title: "So Hoodie",
     colors: "Black & Grey",
-    img: "img/product-3.png",
+    img: "img/soon.png",
     price: 55,
     company: "Unisex Hoodie",
     info:
@@ -43,7 +43,7 @@ export const storeProducts = [
     id: 4,
     title: "Same Ol' Sweater",
     colors: "Black & Grey",
-    img: "img/product-4.png",
+    img: "img/soon.png",
     price: 50,
     company: "Unisex Sweater",
     info:
@@ -55,7 +55,8 @@ export const storeProducts = [
   {
     id: 5,
     title: "Not ur Basic Logo Tee",
-    img: "img/product-5.png",
+
+    img: "img/soon.png",
     price: 30,
     company: "Unisex T-shirt",
     info:
