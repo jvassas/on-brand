@@ -15,6 +15,7 @@ export default class Details extends Component {
             info,
             price,
             title,
+            colors,
             inCart
           } = value.detailProduct;
           return (
@@ -32,8 +33,9 @@ export default class Details extends Component {
                 {/* product model, price, info */}
                 <div className="col-10 mx-auto col-md-6 my-3 text-capitalize" id="product-info">
                   <h3>model: {title}</h3>
+                  <h3>{colors}</h3>
                   <h4 className="text-title text-uppercase text-muted mt-3 mb-2">
-                    made by : <span className="text-uppercase">{company}</span>
+                     <span className="text-uppercase">{company}</span>
                   </h4>
                   <h4 className="text-blue">
                     <strong>
@@ -74,7 +76,8 @@ export default class Details extends Component {
 const ButtonContainer = styled.button`
   text-transform: uppercase;
   font-size: 1.2rem;
-  background: white;
+  background: var(--mainDark);
+  color: white;
   border: 0.2rem solid var(--lightBlue);
   padding: 0.2rem 0.5rem;
   border-radius: 0.5rem;

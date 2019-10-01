@@ -21,7 +21,7 @@ export default class Landing extends Component {
               <strong>COMFY CASUAL X STREETWEAR</strong>
             </h3>
           </Tween>
-          <p class="card-text py-2">
+          <p class="card-text py-2" id="intro">
             Get On Brand represents comfortable and stylish for any occasion. Be
             yourself, feel yourself, On Brand.
           </p>
@@ -37,16 +37,18 @@ export default class Landing extends Component {
 const ButtonContainer = styled.button`
   text-transform: capitalize;
   font-size: 1.2rem;
-  background: white;
-  border: 0.2rem solid var(--lightBlue);
+  background: var(--mainDark);
+  color: white;
+  border: 0.2rem solid var(--mainDark);
   padding: 0.2rem 0.5rem;
   border-radius: 0.5rem;
   cursor: pointer;
   margin: 0.2rem 0.5rem;
   transition: all 0.5s ease-in-out;
   &:hover {
-    background: var(--lightBlue);
+    background: var(--mainBlack);
     color: var(--mainYellow);
+    border:0.2rem solid var(--mainBlack);
   }
   &:focus {
     outline: none;

@@ -2,7 +2,8 @@
 export const storeProducts = [
   {
     id: 1,
-    title: "My Type of Jogger (BLACK & GREY)",
+    title: "My Type of Jogger",
+    colors: "Black & Grey",
     img: "img/product-1.png",
     price: 60,
     company: "Men's Joggers",
@@ -14,7 +15,8 @@ export const storeProducts = [
   },
   {
     id: 2,
-    title: "$weats in the City (BLACK AND GREY)",
+    title: "$weats in the City",
+    colors: "Black & Grey",
     img: "img/product-2.png",
     price: 60,
     company: "Women's Sweats",
@@ -26,7 +28,8 @@ export const storeProducts = [
   },
   {
     id: 3,
-    title: "So Hoodie (BLACK AND GREY)",
+    title: "So Hoodie",
+    colors: "Black & Grey",
     img: "img/product-3.png",
     price: 55,
     company: "Unisex Hoodie",
@@ -38,7 +41,8 @@ export const storeProducts = [
   },
   {
     id: 4,
-    title: "Same Ol' Sweater (BLACK)",
+    title: "Same Ol' Sweater",
+    colors: "Black & Grey",
     img: "img/product-4.png",
     price: 50,
     company: "Unisex Sweater",

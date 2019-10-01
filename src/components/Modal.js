@@ -22,7 +22,7 @@ export default class Modal extends Component {
                       id="modal"
                       className="col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize p-5"
                     >
-                      <h5 className="msg">Item added to cart</h5>
+                      <h5 className="msg">added to cart</h5>
                       <img src={img} className="img-fluid" alt="product" />
                       <h5 className="msg">{title}</h5>
                       <h5 className="text-muted">price : $ {price}</h5>
@@ -65,7 +65,8 @@ const ModalContainer = styled.div`
 const ButtonContainer = styled.button`
   text-transform: capitalize;
   font-size: 1.2rem;
-  background: white;
+  background: var(--mainDark);
+  color: white;
   border: 0.1rem solid var(--lightBlue);
   padding: 0.2rem 0.5rem;
   border-radius: 0.5rem;
