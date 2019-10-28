@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Tween, Timeline } from "react-gsap";
+import { Tween } from "react-gsap";
 import styled from "styled-components";
 import GOB from "../../src/geton.png";
 
@@ -9,7 +9,7 @@ export default class Landing extends Component {
     return (
       <div className="jumbotron p-0">
         <div className="rounded-top">
-          <img src={GOB} class="img-fluid" alt="Sample image" />
+          <img src={GOB} class="img-fluid" />
           <a href="#">
             <div class="mask rgba-white-slight"></div>
           </a>
