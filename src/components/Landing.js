@@ -9,10 +9,7 @@ export default class Landing extends Component {
     return (
       <div className="jumbotron p-0">
         <div className="rounded-top">
-          <img src={GOB} class="img-fluid" />
-          <a href="#">
-            <div class="mask rgba-white-slight"></div>
-          </a>
+          <img src={GOB} class="img-fluid"/>
         </div>
 
         <div className="card-body text-center mb-3">
