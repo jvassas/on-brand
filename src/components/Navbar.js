@@ -6,11 +6,11 @@ import styled from "styled-components";
 export default class Navb extends Component {
   render() {
     return (
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar collapseOnSelect expand="lg" className="text-center">
         <Navbar.Brand href="#home"></Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" className="text-center" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mr-auto">
+          <Nav className="text-center">
             <Nav.Link href="/" className="nav-link" id="page-link">
               HOME
             </Nav.Link>
@@ -19,9 +19,6 @@ export default class Navb extends Component {
             </Nav.Link>
             <Nav.Link href="/about" className="nav-link" id="page-link">
               ABOUT
-            </Nav.Link>
-            <Nav.Link href="/blog" className="nav-link" id="page-link">
-              BLOG
             </Nav.Link>
           </Nav>
           <Nav.Link href="/cart" className="ml-auto">

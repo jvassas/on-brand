@@ -10,8 +10,14 @@
   --mainDark:#232528;
   --mainYellow:#ffa400;
 }
-.row {
-  color: white;
+
+.bg-dark {
+  background-color: transparent !important;
+}
+
+.navbar {
+  background-color: transparent !important;
+  color: black;
 }
 
 .jumbotron {
@@ -19,6 +25,9 @@
   width:100%;
 }
 
+.car {
+  padding-bottom: 2rem;
+}
 #intro {
   font-family: 'Catamaran', sans-serif;
 }
@@ -30,9 +39,10 @@
 }
 
 body {
-  background: black !important;
+  
   color: var(--mainDark) !important;
   font-family: 'Oleo Script', cursive;
+
 }
 
 .text-title {
@@ -70,17 +80,17 @@ body {
 
 #abt-title {
   padding: 2%;
-  color: white;
+  color:rgb(71, 71, 71);
 }
 
 .abt {
-  color: white;
+  color:rgb(71, 71, 71);
   font-family: 'Catamaran', sans-serif;
 }
 
 .title {
   text-align: center;
-  color: white;
+  color:rgb(71, 71, 71);
 }
 
 #colors {
@@ -94,7 +104,7 @@ body {
 
 
 #product-info {
-  color:white;
+  color:rgb(71, 71, 71);
 }
 
 .msg {
@@ -108,8 +118,15 @@ body {
 .cart-title {
   margin-top: 35px;
   margin-bottom: 70px;
-  color: white;
+  color:rgb(71, 71, 71);
   text-align: center;
+}
+
+footer {
+  padding: 2rem;
+  margin:0;
+  color: black;
+  font-family: 'Catamaran', sans-serif;
 }
 
 
